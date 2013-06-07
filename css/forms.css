@@ -1,0 +1,54 @@
+label,
+.label {
+  display: block;
+  font-family: font-body;
+  font-size: 100%;
+  font-weight: 700;
+}
+.field {
+  padding: 10px 20px 0;
+  position: relative;
+}
+.field > label,
+.field .label,
+.field .help {
+  line-height: 40px;
+}
+.field > label,
+.field .label {
+  float: left;
+}
+.field > [class^=icon] {
+  color: color-base1;
+  left: 25px;
+  line-height: 30px;
+  position: absolute;
+  top: 55px;
+  text-align: center;
+  width: 30px;
+}
+.field > [class^=icon] ~ .input,
+.field > [class^=icon] ~ input,
+.field > [class^=icon] ~ .tagit {
+  padding-left: 38px;
+}
+.field:active [class^=icon],
+.field input:active [class^=icon],
+.field .input:active [class^=icon],
+.field:focus [class^=icon],
+.field input:focus [class^=icon],
+.field .input:focus [class^=icon] {
+  border-right-color: transparent;
+}
+.field .help {
+  color: color-base1;
+  float: right;
+  font-size: 90%;
+  font-style: normal;
+}
+.actions {
+  padding-top: 20px;
+}
+.actions button[type=submit]:first-child:last-child {
+  width: 100%;
+}

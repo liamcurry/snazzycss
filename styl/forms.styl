@@ -1,0 +1,50 @@
+label, .label
+  display block
+  font-family font-body
+  font-size 100%
+  font-weight 700
+
+.field
+  padding 10px 20px 0
+  position relative
+
+  > label, .label, .help
+    line-height 40px
+
+  > label, .label
+    float left
+
+  > [class^=icon]
+    color color-base1
+    left 25px
+    line-height 30px
+    position absolute
+    top 55px
+    text-align center
+    width 30px
+
+    ~
+
+      .input, input, .tagit
+        padding-left 38px
+
+  &, input, .input
+
+    &:active, &:focus
+
+      [class^=icon]
+        border-right-color transparent
+
+  .help
+    color color-base1
+    float right
+    font-size 90%
+    font-style normal
+
+.actions
+  padding-top 20px
+
+  button[type=submit]
+
+    &:first-child:last-child
+      width 100%

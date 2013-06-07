@@ -1,0 +1,17 @@
+.alert {
+  color: #93a1a1;
+  line-height: 20px;
+  padding: 10px;
+}
+.alert.error,
+.alert.red {
+  background: #dc322f;
+}
+.alert.info,
+.alert.blue {
+  background: #268bd2;
+}
+.alert.success,
+.alert.green {
+  background: #859900;
+}

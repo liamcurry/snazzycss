@@ -1,0 +1,32 @@
+@import vars
+@import utils
+
+*
+  box-sizing border-box
+  margin 0
+  padding 0
+
+body
+  font-size 10px
+  font-family font-body
+
+h1, h2, h3, h4, h5, h6
+  font-family font-header
+
+h1
+  @extends .xx-large
+
+h2
+  @extends .x-large
+
+h3
+  @extends .large
+
+h4
+  @extends .medium
+
+h5
+  @extends .small
+
+h6
+  @extends .xx-small

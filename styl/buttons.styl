@@ -1,0 +1,78 @@
+@import vars
+
+
+color-button(color, name=false)
+
+  if name
+    name = "." + name
+  else
+    name = ""
+
+  lighter = lighten(color, contrast-strength)
+  darker = darken(color, contrast-strength)
+
+  lightest = lighten(lighter, contrast-strength)
+  darkest = darken(darker, contrast-strength)
+
+  &{name}
+    background color
+    border-color color
+    border-bottom-color darker
+
+    &:hover
+      background darker
+      border-color darker
+      border-bottom-color darkest
+
+border-bottom-width = floor(border-radius / 2)
+
+.btn, button
+  if use-border-radius
+    border-radius border-radius
+  border-style solid
+  border-width 1px 1px border-bottom-width 1px
+  box-sizing border-box
+  color rgba(color-base1, .9)
+  cursor pointer
+  display block
+  font-size 14px
+  letter-spacing 2px
+  line-height line-height
+  height (line-height * 2)
+  padding (11px - border-bottom-width) gutter-width (line-height / 2)
+  text-align center
+  text-decoration none
+  if use-text-shadow
+    text-shadow -1px -1px 0 rgba(0, 0, 0, .1)
+  text-transform uppercase
+  transition .5s background, .5s color, .5s border-color, .5s height
+
+  &:hover
+    color rgba(#fff, 1)
+
+  &.small
+    font-size 12px
+    height (line-height * 1.5)
+    padding-bottom (line-height / 4)
+    padding-top (line-height / 4)
+
+  color-button(color-high2)
+  color-button(color-blue, 'blue')
+  color-button(color-red, 'red')
+  color-button(color-yellow, 'yellow')
+  color-button(color-green, 'green')
+
+
+.btns
+
+  .btn
+    border-left-width 0
+    border-radius 0
+    float left
+
+    &:first-child
+      border-left-width 1px
+      border-radius border-radius 0 0 border-radius
+
+    &:last-child
+      border-radius 0 border-radius border-radius 0

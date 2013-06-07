@@ -1,0 +1,102 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>Grid Example</title>
+<link rel=stylesheet href=../css/all.css>
+<style>
+  [class^=col] {
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    text-align; center;
+
+  }
+  [class^=col]:first-child {
+    border-left-width: 1px;
+  }
+  [class^=row]:last-child [class^=col] {
+    border-bottom-width: 1px;
+  }
+</style>
+<h1>Grid Example</h1>
+<div class=container>
+  <section>
+    <h2>Flexible grid with percentages</h2>
+    <div class=row>
+      <div class=col25>25%</div>
+      <div class=col50>50%</div>
+      <div class=col25>25%</div>
+    </div>
+    <div class=row>
+      <div class=col33>33%</div>
+      <div class=col66>66%</div>
+    </div>
+    <div class=row>
+      <div class="push33 col66">push33, col66</div>
+    </div>
+    <div class=row>
+      <div class="push66 col33">push33, col66</div>
+    </div>
+    </div>
+  </section>
+  <section>
+    <h2>12 column grid</h2>
+    <div class=row12>
+      <div class=col1>1</div>
+      <div class=col11>11</div>
+    </div>
+    <div class=row12>
+      <div class=col2>2</div>
+      <div class=col10>10</div>
+    </div>
+    <div class=row12>
+      <div class=col3>3</div>
+      <div class=col9>9</div>
+    </div>
+    <div class=row12>
+      <div class=col4>4</div>
+      <div class=col8>8</div>
+    </div>
+    <div class=row12>
+      <div class=col5>5</div>
+      <div class=col7>7</div>
+    </div>
+    <div class=row12>
+      <div class=col6>6</div>
+      <div class=col6>6</div>
+    </div>
+  </section>
+  <section>
+    <h2>16 column grid</h2>
+    <div class=row16>
+      <div class=col1>1</div>
+      <div class=col15>15</div>
+    </div>
+    <div class=row16>
+      <div class=col2>2</div>
+      <div class=col14>14</div>
+    </div>
+    <div class=row16>
+      <div class=col3>3</div>
+      <div class=col13>13</div>
+    </div>
+    <div class=row16>
+      <div class=col4>4</div>
+      <div class=col12>12</div>
+    </div>
+    <div class=row16>
+      <div class=col5>5</div>
+      <div class=col11>11</div>
+    </div>
+    <div class=row16>
+      <div class=col6>6</div>
+      <div class=col10>10</div>
+    </div>
+    <div class=row16>
+      <div class=col7>7</div>
+      <div class=col9>9</div>
+    </div>
+    <div class=row16>
+      <div class=col8>8</div>
+      <div class=col8>8</div>
+    </div>
+  </section>
+</div>

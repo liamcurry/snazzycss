@@ -1,0 +1,59 @@
+@import vars
+
+
+color-badge(color, name=false)
+
+  if name
+    name = "." + name
+  else
+    name = ""
+
+  darker = darken(color, contrast-strength)
+
+  &{name}
+    background color
+
+    &:hover
+      background darker
+
+.badge
+  background color-base8
+  if use-border-radius
+    border-radius border-radius
+  else
+    border-radius 0
+  color color-base2
+  display inline-block
+  font-size 14px
+  font-weight normal
+  line-height 30px
+  margin 3px 5px 3px 0
+  padding 0 10px
+  transition .3s linear background, .3s color
+
+  &:hover
+    background color-base5
+    color #fff
+
+  &:nth-last-of-type(1)
+    margin-right 0
+
+  color-badge(color-base4)
+  color-badge(color-red, 'red')
+  color-badge(color-green, 'green')
+  color-badge(color-yellow, 'yellow')
+
+.green
+
+  .badge
+    color-badge(color-green)
+
+.red
+
+  .tagit-choice, .badge
+    color-badge(color-red)
+
+.yellow
+
+  .tagit-choice, .badge
+    color-badge(color-yellow)

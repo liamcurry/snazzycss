@@ -1,0 +1,109 @@
+.btn,
+button {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: rgba(253,246,227,0.9);
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  height: 40px;
+  padding: 10px 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  -webkit-transition: 0.5s background, 0.5s color, 0.5s border-color, 0.5s height;
+  -moz-transition: 0.5s background, 0.5s color, 0.5s border-color, 0.5s height;
+  -o-transition: 0.5s background, 0.5s color, 0.5s border-color, 0.5s height;
+  -ms-transition: 0.5s background, 0.5s color, 0.5s border-color, 0.5s height;
+  transition: 0.5s background, 0.5s color, 0.5s border-color, 0.5s height;
+}
+.btn:hover,
+button:hover {
+  color: #fff;
+}
+.btn.small,
+button.small {
+  font-size: 12px;
+  height: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.btn,
+button {
+  background: #268bd2;
+  border-color: #268bd2;
+  border-bottom-color: #227dbd;
+}
+.btn:hover,
+button:hover {
+  background: #227dbd;
+  border-color: #227dbd;
+  border-bottom-color: #1f70aa;
+}
+.btn.blue,
+button.blue {
+  background: #268bd2;
+  border-color: #268bd2;
+  border-bottom-color: #227dbd;
+}
+.btn.blue:hover,
+button.blue:hover {
+  background: #227dbd;
+  border-color: #227dbd;
+  border-bottom-color: #1f70aa;
+}
+.btn.red,
+button.red {
+  background: #dc322f;
+  border-color: #dc322f;
+  border-bottom-color: #ce2623;
+}
+.btn.red:hover,
+button.red:hover {
+  background: #ce2623;
+  border-color: #ce2623;
+  border-bottom-color: #b9221f;
+}
+.btn.yellow,
+button.yellow {
+  background: #b58900;
+  border-color: #b58900;
+  border-bottom-color: #a37b00;
+}
+.btn.yellow:hover,
+button.yellow:hover {
+  background: #a37b00;
+  border-color: #a37b00;
+  border-bottom-color: #936f00;
+}
+.btn.green,
+button.green {
+  background: #859900;
+  border-color: #859900;
+  border-bottom-color: #788a00;
+}
+.btn.green:hover,
+button.green:hover {
+  background: #788a00;
+  border-color: #788a00;
+  border-bottom-color: #6c7c00;
+}
+.btns .btn {
+  border-left-width: 0;
+  border-radius: 0;
+  float: left;
+}
+.btns .btn:first-child {
+  border-left-width: 1px;
+  border-radius: 2px 0 0 2px;
+}
+.btns .btn:last-child {
+  border-radius: 0 2px 2px 0;
+}

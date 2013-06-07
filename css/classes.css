@@ -1,0 +1,548 @@
+label,
+.label {
+  display: block;
+  font-family: Helvetica, sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+}
+.muted {
+  opacity: 0.5;
+}
+.button,
+button {
+  border-radius: 2px;
+  border: 0;
+  color: #fdf6e3;
+  cursor: pointer;
+  display: block;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  height: 40px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s background, 0.5s color, 0.5s border-color;
+}
+.button,
+button,
+.button.blue,
+button.blue {
+  background: #3797db;
+}
+.button:hover,
+button:hover,
+.button.blue:hover,
+button.blue:hover {
+  background: #268bd2;
+}
+.button.gray,
+button.gray,
+.button.grey,
+button.grey {
+  background: #586e75;
+}
+.button.gray:hover,
+button.gray:hover,
+.button.grey:hover,
+button.grey:hover {
+  background: #073642;
+}
+.button.red,
+button.red {
+  background: #e04744;
+}
+.button.red:hover,
+button.red:hover {
+  background: #dc322f;
+}
+.button.green,
+button.green {
+  background: #a4bd00;
+}
+.button.green:hover,
+button.green:hover {
+  background: #859900;
+}
+.button.yellow,
+button.yellow {
+  background: #d6a200;
+}
+.button.yellow:hover,
+button.yellow:hover {
+  background: #b58900;
+}
+.button.plain,
+button.plain {
+  background: transparent;
+  color: #268bd2;
+}
+.button.plain:hover,
+button.plain:hover {
+  background: transparent;
+  color: #227dbd;
+  text-decoration: underline;
+}
+.button.plain.green,
+button.plain.green {
+  color: #859900;
+}
+.button.plain.green:hover,
+button.plain.green:hover {
+  color: #788a00;
+}
+.button.plain.red,
+button.plain.red {
+  color: #dc322f;
+}
+.button.plain.red:hover,
+button.plain.red:hover {
+  color: #ce2623;
+}
+.tagit {
+  list-style: none;
+  overflow: hidden;
+  padding: 1px 3px 0;
+}
+.tagit .tagit-choice,
+.tagit .tagit-new {
+  float: left;
+}
+.tagit .tagit-new {
+  margin: 0;
+  padding: 0;
+}
+.tagit .tagit-new [role=status] {
+  display: none;
+}
+.tagit .tagit-new input {
+  background-color: inherit;
+  border: 0;
+  float: left;
+  line-height: 20px;
+  min-height: auto;
+  padding: 8px 0 7px;
+}
+.tagit .tagit-close {
+  cursor: pointer;
+  position: static;
+}
+.tagit .tagit-close .text-icon {
+  color: #fff;
+  display: inline;
+  padding: 0 0 0 5px;
+}
+.tagit-choice,
+.badge {
+  background: #657b83;
+  border-radius: 2px;
+  color: #eee8d5;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 2px 5px 3px 0;
+  padding: 0 10px;
+  transition: 0.3s linear background, 0.3s color;
+}
+.tagit-choice:hover,
+.badge:hover {
+  background: #47565c;
+  color: #fff;
+}
+.tagit-choice:nth-last-of-type(1),
+.badge:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.tagit-choice.gray,
+.badge.gray,
+.tagit-choice.grey,
+.badge.grey {
+  background: #073642;
+}
+.tagit-choice.gray:hover,
+.badge.gray:hover,
+.tagit-choice.grey:hover,
+.badge.grey:hover {
+  background: #002b36;
+}
+.tagit-choice.green,
+.badge.green {
+  background: #859900;
+}
+.tagit-choice.green:hover,
+.badge.green:hover {
+  background: #5d6b00;
+}
+.tagit-choice.red,
+.badge.red {
+  background: #dc322f;
+}
+.tagit-choice.red:hover,
+.badge.red:hover {
+  background: #a01d1b;
+}
+.green .tagit-choice,
+.green .badge {
+  background: #859900;
+}
+.green .tagit-choice:hover,
+.green .badge:hover {
+  background: #5d6b00;
+}
+.red .tagit-choice,
+.red .badge {
+  background: #dc322f;
+}
+.red .tagit-choice:hover,
+.red .badge:hover {
+  background: #a01d1b;
+}
+.toggleable .toggle-target {
+  display: none;
+}
+.toggleable .toggle {
+  margin: 20px 0;
+  transition: 0.5s background;
+}
+.toggleable .toggle:before {
+  content: '▶ Show ';
+}
+.toggleable.open .toggle:before {
+  content: '▼ Hide ';
+}
+.toggleable.open .toggle-target {
+  display: block;
+}
+.field {
+  padding-top: 10px;
+  position: relative;
+}
+.field > label,
+.field .label,
+.field .help {
+  line-height: 40px;
+}
+.field > label,
+.field .label {
+  float: left;
+}
+.field > [class^=icon] {
+  color: #93a1a1;
+  left: 5px;
+  line-height: 30px;
+  position: absolute;
+  top: 55px;
+  text-align: center;
+  width: 30px;
+}
+.field > [class^=icon] ~ .input,
+.field > [class^=icon] ~ input,
+.field > [class^=icon] ~ .tagit {
+  padding-left: 38px;
+}
+.field:active [class^=icon],
+.field input:active [class^=icon],
+.field .input:active [class^=icon],
+.field:focus [class^=icon],
+.field input:focus [class^=icon],
+.field .input:focus [class^=icon] {
+  border-right-color: transparent;
+}
+.field .help {
+  color: #93a1a1;
+  float: right;
+  font-size: 90%;
+  font-style: normal;
+}
+.tooltip {
+  display: block;
+  position: relative;
+}
+.tooltip:hover .tooltip-more {
+  display: block;
+}
+.tooltip .tooltip-more {
+  background: #002b36;
+  border-radius: 2px;
+  color: #fff;
+  display: none;
+  line-height: 30px;
+  padding: 0 10px;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  width: 250px;
+}
+.tooltip .tooltip-more:before {
+  border-bottom: 10px solid #002b36;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: ' ';
+  display: block;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  top: -10px;
+}
+.tooltip .tooltip-more.bottom:before {
+  border-top: 10px solid #002b36;
+  border-bottom: 0;
+  bottom: -10px;
+  top: auto;
+}
+.tooltip .tooltip-more.left:before {
+  border-left: 0;
+}
+.tooltip .tooltip-more.right:before {
+  border-right: 0;
+}
+.ui-autocomplete {
+  list-style: none;
+  line-height: 40px;
+  padding-top: 5px;
+  width: 250px !important;
+}
+.ui-autocomplete:before {
+  border-bottom: 10px solid #002b36;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: ' ';
+  display: block;
+  left: 10px;
+  position: absolute;
+  top: -5px;
+}
+.ui-autocomplete .ui-menu-item {
+  background: #073642;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.ui-autocomplete .ui-menu-item:first-child,
+.ui-autocomplete .ui-menu-item:hover {
+  background: #002b36;
+}
+.ui-autocomplete .ui-menu-item:first-child a,
+.ui-autocomplete .ui-menu-item:hover a {
+  color: #fff;
+}
+.ui-autocomplete .ui-menu-item:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.ui-autocomplete .ui-menu-item:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom: 0;
+}
+.ui-autocomplete .ui-menu-item a {
+  color: #657b83;
+}
+.dropdown,
+.button-group {
+  position: relative;
+}
+.dropdown > .toggle,
+.button-group > .toggle,
+.dropdown > .button,
+.button-group > .button,
+.dropdown > button,
+.button-group > button,
+.dropdown > a,
+.button-group > a {
+  float: left;
+}
+.dropdown > .button,
+.button-group > .button,
+.dropdown > button,
+.button-group > button,
+.dropdown > a,
+.button-group > a {
+  border-radius: 2px 0 0 2px;
+  padding-left: 0;
+  width: 80%;
+}
+.dropdown > .button [class^=icon],
+.button-group > .button [class^=icon],
+.dropdown > button [class^=icon],
+.button-group > button [class^=icon],
+.dropdown > a [class^=icon],
+.button-group > a [class^=icon] {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50px;
+}
+.dropdown a,
+.button-group a {
+  color: #fdf6e3;
+}
+.dropdown a:hover,
+.button-group a:hover {
+  background: #cb4b16;
+}
+.dropdown .button,
+.button-group .button,
+.dropdown button,
+.button-group button {
+  text-align: left;
+}
+.dropdown.open > .button,
+.button-group.open > .button,
+.dropdown:target > .button,
+.button-group:target > .button,
+.dropdown:hover > .button,
+.button-group:hover > .button,
+.dropdown.open > button,
+.button-group.open > button,
+.dropdown:target > button,
+.button-group:target > button,
+.dropdown:hover > button,
+.button-group:hover > button,
+.dropdown.open > a,
+.button-group.open > a,
+.dropdown:target > a,
+.button-group:target > a,
+.dropdown:hover > a,
+.button-group:hover > a {
+  border-radius: 2px 0 0 0;
+}
+.dropdown.open > .toggle,
+.button-group.open > .toggle,
+.dropdown:target > .toggle,
+.button-group:target > .toggle,
+.dropdown:hover > .toggle,
+.button-group:hover > .toggle {
+  border-radius: 0 2px 0 0;
+}
+.dropdown.open .dropdown-menu,
+.button-group.open .dropdown-menu,
+.dropdown:target .dropdown-menu,
+.button-group:target .dropdown-menu,
+.dropdown:hover .dropdown-menu,
+.button-group:hover .dropdown-menu {
+  max-height: 400px;
+}
+.dropdown.open .toggle.open,
+.button-group.open .toggle.open,
+.dropdown:target .toggle.open,
+.button-group:target .toggle.open,
+.dropdown:hover .toggle.open,
+.button-group:hover .toggle.open {
+  display: none;
+}
+.dropdown.open .toggle.close,
+.button-group.open .toggle.close,
+.dropdown:target .toggle.close,
+.button-group:target .toggle.close,
+.dropdown:hover .toggle.close,
+.button-group:hover .toggle.close {
+  display: block;
+}
+.dropdown .toggle,
+.button-group .toggle {
+  background: #227dbd;
+  border-radius: 0 2px 2px 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  width: 20%;
+}
+.dropdown .toggle.close,
+.button-group .toggle.close {
+  background: #002b36;
+  display: none;
+}
+.dropdown .toggle.open,
+.button-group .toggle.open {
+  display: block;
+}
+.dropdown .dropdown-menu,
+.button-group .dropdown-menu {
+  background: #002b36;
+  border-radius: 0 0 2px 2px;
+  font-size: 14px;
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: 0.5s max-height;
+  top: 100%;
+  width: 100%;
+  z-index: 250;
+}
+.dropdown .dropdown-menu li:last-child a,
+.button-group .dropdown-menu li:last-child a {
+  border-radius: 0 0 2px 2px;
+}
+.dropdown .dropdown-menu li a,
+.button-group .dropdown-menu li a {
+  display: block;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.dropdown .dropdown-menu li a [class^=icon],
+.button-group .dropdown-menu li a [class^=icon] {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 50px;
+}
+.alert {
+  color: #fdf6e3;
+  line-height: 20px;
+  padding: 10px;
+}
+.alert.error,
+.alert.red {
+  background: #dc322f;
+}
+.alert.info,
+.alert.blue {
+  background: #268bd2;
+}
+.alert.success,
+.alert.green {
+  background: #859900;
+}
+.fields {
+  padding: 0 20px 10px 120px;
+  position: relative;
+}
+.fields.purple .section-icon,
+.fields.violet .section-icon {
+  background: #6c71c4;
+}
+.fields.orange .section-icon {
+  background: #cb4b16;
+}
+.fields.red .section-icon {
+  background: #dc322f;
+}
+.fields.green .section-icon {
+  background: #859900;
+}
+.fields.cyan .section-icon {
+  background: #2aa198;
+}
+.fields.magenta .section-icon {
+  background: #d33682;
+}
+.fields .section-icon {
+  background: #268bd2;
+  color: #fff;
+  display: table;
+  font-size: 24px;
+  position: absolute;
+  height: 100px;
+  left: 0;
+  top: 0;
+  width: 100px;
+}
+.fields .section-icon [class^=icon] {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}

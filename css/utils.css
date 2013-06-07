@@ -1,0 +1,68 @@
+.muted {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.middle {
+  vertical-align: middle;
+}
+.bottom {
+  vertical-align: bottom;
+}
+.top {
+  vertical-align: top;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.center,
+.text-center {
+  text-align: center;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.full {
+  width: 100%;
+}
+.toggleable.open .toggle.open,
+.toggleable:target .toggle.open {
+  display: none;
+}
+.toggleable.open > .content,
+.toggleable:target > .content {
+  display: block;
+}
+.toggleable > .content {
+  display: none;
+}
+.xx-small {
+  font-size: 9.6px;
+}
+.x-small {
+  font-size: 12px;
+}
+.small {
+  font-size: 14.24px;
+}
+.medium {
+  font-size: 16px;
+}
+.large {
+  font-size: 19.2px;
+}
+.x-large {
+  font-size: 24px;
+}
+.xx-large {
+  font-size: 32px;
+}
+.huge {
+  font-size: 48px;
+}

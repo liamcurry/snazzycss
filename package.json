@@ -1,0 +1,8 @@
+{
+  "name": "cssframework",
+  "preferGlobal": false,
+  "dependencies": {
+    "stylus": "*",
+    "nib": "*"
+  }
+}

@@ -1,0 +1,72 @@
+@import vars
+
+.dropdown
+  position relative
+
+  &.left
+
+    .content
+      left 0
+      right auto
+
+  &.open, &:target, &:hover
+
+    .content
+      display block
+
+    .toggle
+
+      &.open
+        display none
+
+      &.close
+        display block
+
+  .toggle
+    display block
+    padding-left 0
+    padding-right 0
+    text-align center
+
+    &.close
+      border-bottom 0
+      border-radius border-radius border-radius 0 0
+      display none
+
+      &:before
+        border-bottom 10px solid color-base7
+        border-left 10px solid transparent
+        border-right 10px solid transparent
+        bottom 0
+        content ' '
+        display block
+        left 50%
+        margin-left -10px
+        position absolute
+
+    &.open
+      display block
+
+  .content
+    background color-base8
+    border-radius 0 0 border-radius border-radius
+    display none
+    font-size 14px
+    list-style none
+    padding 10px
+    position absolute
+    top 100%
+    right 0
+    width 400%
+    z-index 250
+
+    a
+      display block
+      letter-spacing 2px
+      text-transform uppercase
+
+      [class^=icon]
+        display block
+        float left
+        text-align center
+        width 50px

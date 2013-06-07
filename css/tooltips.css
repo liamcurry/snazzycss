@@ -1,0 +1,42 @@
+.tooltip {
+  display: block;
+  position: relative;
+}
+.tooltip:hover .tooltip-more {
+  display: block;
+}
+.tooltip .tooltip-more {
+  background: color-base8;
+  border-radius: border-radius;
+  color: color-base1;
+  display: none;
+  line-height: 30px;
+  padding: 0 10px;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  width: 250px;
+}
+.tooltip .tooltip-more:before {
+  border-bottom: 10px solid color-base8;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: ' ';
+  display: block;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  top: -10px;
+}
+.tooltip .tooltip-more.bottom:before {
+  border-top: 10px solid color-base8;
+  border-bottom: 0;
+  bottom: -10px;
+  top: auto;
+}
+.tooltip .tooltip-more.left:before {
+  border-left: 0;
+}
+.tooltip .tooltip-more.right:before {
+  border-right: 0;
+}

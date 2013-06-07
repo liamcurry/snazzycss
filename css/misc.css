@@ -1,0 +1,113 @@
+.tagit {
+  list-style: none;
+  overflow: hidden;
+  padding: 1px 3px 0;
+}
+.tagit .tagit-choice,
+.tagit .tagit-new {
+  float: left;
+}
+.tagit .tagit-new {
+  margin: 0;
+  padding: 0;
+}
+.tagit .tagit-new [role=status] {
+  display: none;
+}
+.tagit .tagit-new input {
+  background-color: inherit;
+  border: 0;
+  float: left;
+  line-height: 20px;
+  min-height: auto;
+  padding: 8px 0 7px;
+}
+.tagit .tagit-close {
+  cursor: pointer;
+  position: static;
+}
+.tagit .tagit-close .text-icon {
+  color: #fff;
+  display: inline;
+  padding: 0 0 0 5px;
+}
+.ui-autocomplete {
+  list-style: none;
+  line-height: 40px;
+  padding-top: 5px;
+  width: 250px !important;
+}
+.ui-autocomplete:before {
+  border-bottom: 10px solid color-base03;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: ' ';
+  display: block;
+  left: 10px;
+  position: absolute;
+  top: -5px;
+}
+.ui-autocomplete .ui-menu-item {
+  background: color-base02;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.ui-autocomplete .ui-menu-item:first-child,
+.ui-autocomplete .ui-menu-item:hover {
+  background: color-base03;
+}
+.ui-autocomplete .ui-menu-item:first-child a,
+.ui-autocomplete .ui-menu-item:hover a {
+  color: #fff;
+}
+.ui-autocomplete .ui-menu-item:first-child {
+  border-top-left-radius: default-border-radius;
+  border-top-right-radius: default-border-radius;
+}
+.ui-autocomplete .ui-menu-item:last-child {
+  border-bottom-left-radius: default-border-radius;
+  border-bottom-right-radius: default-border-radius;
+  border-bottom: 0;
+}
+.ui-autocomplete .ui-menu-item a {
+  color: color-base00;
+}
+.fields {
+  padding: 0 20px 10px 120px;
+  position: relative;
+}
+.fields.purple .section-icon,
+.fields.violet .section-icon {
+  background: color-purple;
+}
+.fields.orange .section-icon {
+  background: color-orange;
+}
+.fields.red .section-icon {
+  background: color-red;
+}
+.fields.green .section-icon {
+  background: color-green;
+}
+.fields.cyan .section-icon {
+  background: color-cyan;
+}
+.fields.magenta .section-icon {
+  background: color-magenta;
+}
+.fields .section-icon {
+  background: color-blue;
+  color: #fff;
+  display: table;
+  font-size: 24px;
+  position: absolute;
+  height: 100px;
+  left: 0;
+  top: 0;
+  width: 100px;
+}
+.fields .section-icon [class^=icon] {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}

@@ -1,0 +1,32 @@
+.modal
+  height 0
+  left 30%
+  position fixed
+  overflow hidden
+  opacity 0
+  transition .5s opacity
+  top 25%
+  width 40%
+  z-index 0
+
+  &:target
+    height 50%
+    opacity 1
+    z-index 9500
+
+  &:before
+    background #000
+    content ' '
+    display block
+    height 100%
+    left 0
+    position fixed
+    opacity .8
+    top 0
+    width 100%
+    z-index -1
+
+  .header, .content
+    background #fff
+    position relative
+    z-index 550

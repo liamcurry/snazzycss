@@ -1,0 +1,44 @@
+.tooltip
+  display block
+  position relative
+
+  &:hover
+
+    .tooltip-more
+      display block
+
+  .tooltip-more
+    background color-base8
+    if use-border-radius
+      border-radius border-radius
+    color color-base1
+    display none
+    line-height 30px
+    padding 0 10px
+    position absolute
+    text-align center
+    top 100%
+    width 250px
+
+    &:before
+      border-bottom 10px solid color-base8
+      border-left 10px solid transparent
+      border-right 10px solid transparent
+      content ' '
+      display block
+      left 50%
+      margin-left -5px
+      position absolute
+      top -10px
+
+    &.bottom:before
+      border-top 10px solid color-base8
+      border-bottom 0
+      bottom -10px
+      top auto
+
+    &.left:before
+      border-left 0
+
+    &.right:before
+      border-right 0

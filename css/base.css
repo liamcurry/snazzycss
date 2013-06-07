@@ -1,0 +1,93 @@
+.muted {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.middle {
+  vertical-align: middle;
+}
+.bottom {
+  vertical-align: bottom;
+}
+.top {
+  vertical-align: top;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.center,
+.text-center {
+  text-align: center;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.full {
+  width: 100%;
+}
+.toggleable.open .toggle.open,
+.toggleable:target .toggle.open {
+  display: none;
+}
+.toggleable.open > .content,
+.toggleable:target > .content {
+  display: block;
+}
+.toggleable > .content {
+  display: none;
+}
+.xx-small,
+h6 {
+  font-size: 9.6px;
+}
+.x-small {
+  font-size: 12px;
+}
+.small,
+h5 {
+  font-size: 14.24px;
+}
+.medium,
+h4 {
+  font-size: 16px;
+}
+.large,
+h3 {
+  font-size: 19.2px;
+}
+.x-large,
+h2 {
+  font-size: 24px;
+}
+.xx-large,
+h1 {
+  font-size: 32px;
+}
+.huge {
+  font-size: 48px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 10px;
+  font-family: Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, sans-serif;
+}
